@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/app.css">
-    <title>Dc Comics</title>
+    <title>@yield('title')</title>
 </head>
 <body>
-    prova
+    {{-- includere file header --}}
+    @include('partials._header')
+
+    @yield('main')
+
+    {{-- include file footer --}}
+    @include('partials._footer')
 </body>
 </html>
