@@ -8,5 +8,17 @@
 
 {{-- contenuto main --}}
 @section('main')
-    <div>Prova Main</div>
+    <div>
+        <h2>
+            Current series
+        </h2>
+
+        <div class="container">
+            @foreach ($comics as $comic )
+                <div>
+                    {{$comic['title']}}
+                </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
